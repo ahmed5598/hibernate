@@ -13,8 +13,8 @@ services:
     image: postgres:12.4-alpine
     # restart: always
     environment:
-      - POSTGRES_DB: "employees"
-      - POSTGRES_PASSWORD: "hello1234"
+      - POSTGRES_DB=employees
+      - POSTGRES_PASSWORD=hello1234
     volumes:
       - ~/datadir:/var/lib/postgresql/data
 
